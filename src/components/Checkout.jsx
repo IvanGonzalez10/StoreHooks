@@ -1,5 +1,6 @@
-import React from 'react';
-import '../styles/Checkout.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Checkout.scss";
 
 export const Checkout = () => {
   return (
@@ -11,13 +12,15 @@ export const Checkout = () => {
             <h4>Item name</h4>
             <span>$10</span>
           </div>
-        <button type='button'>Eliminar</button>
+          <button type="button">Eliminar</button>
         </div>
       </div>
       <div className="checkout-sidebar">
         <h3>Precio total: $10</h3>
-        <button type='button'>Continuar pedido</button>
+        <Link to='/checkout/information'>
+          <button type="button">Continuar pedido</button>
+        </Link>
       </div>
     </div>
   );
-}
+};

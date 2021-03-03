@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/Information.scss'
+import { Link } from "react-router-dom";
+import "../styles/Information.scss";
 
 export const Information = () => {
   return (
@@ -26,7 +27,9 @@ export const Information = () => {
           </div>
           <div className="information-buttons">
             <div className="information-back">Regresar</div>
-            <div className="information-next">Pagar</div>
+            <div className="information-next">
+              <Link to="/checkout/payment">Pagar</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,15 +1,18 @@
-import React from 'react';
-
-import '../styles/Header.scss';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Header.scss";
 
 export const Header = () => {
   return (
     <div className="header">
-      <h1 className='header-title'>Store</h1>
+      <h1 className="header-title">
+        <Link to='/'>
+        Store
+        </Link>
+        </h1>
       <div className="header-checkout">
-        Checkout
+        <Link to="/checkout">Checkout</Link>
       </div>
     </div>
   );
-}
+};
