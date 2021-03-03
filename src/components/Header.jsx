@@ -11,7 +11,9 @@ export const Header = () => {
         </Link>
         </h1>
       <div className="header-checkout">
-        <Link to="/checkout">Checkout</Link>
+        <Link to="/checkout">
+          <i className='fas fa-shopping-basket'></i>
+        </Link>
       </div>
     </div>
   );

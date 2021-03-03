@@ -12,7 +12,7 @@ export const Checkout = () => {
             <h4>Item name</h4>
             <span>$10</span>
           </div>
-          <button type="button">Eliminar</button>
+          <button type="button"><i className='fas fa-trash-alt'></i></button>
         </div>
       </div>
       <div className="checkout-sidebar">
