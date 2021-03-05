@@ -1,4 +1,4 @@
-import { useSate } from "react";
+import { useState } from "react";
 import initialState from "../initialState";
 
 export const useInitialState = () => {
